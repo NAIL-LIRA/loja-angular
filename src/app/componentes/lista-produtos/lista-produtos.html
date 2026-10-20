@@ -1,0 +1,9 @@
+<section class="secao-produtos">
+
+    <h2>Catálogo de Produtos</h2>
+    <div class="cards-grid">
+        @for(item of produtos; track item.id){
+            <app-card-produto>[produto]="item"</app-card-produto>
+        }
+    </div>
+</section>

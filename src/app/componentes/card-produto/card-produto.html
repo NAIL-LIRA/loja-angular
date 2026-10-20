@@ -1,0 +1,10 @@
+<div class="card-produto">
+    <div class="card-imagem">
+        <img [src]="produto?.image" [alt]="produto?.title">
+    </div>
+    <div class="card-conteudo">
+        <h3 class="produto-nome">{{produto?.title}}</h3>
+        <p class="produto-preco">R$ {{produto?.price}}</p>
+        <button type="button" class="btn-comprar">Adicionar ao carinho</button>
+    </div>
+</div>
