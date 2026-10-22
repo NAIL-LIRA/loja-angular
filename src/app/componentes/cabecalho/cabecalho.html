@@ -2,6 +2,14 @@
 <header class="cabecalho">
     <div class="container">
         <h1>Minha Loja</h1>
+        <nav>
+            <a href="">Início</a>
+            <a href="">Produtos</a>
+            <a href="">Contato</a>
+            @if(cartService.obterQuantidade()>0){
+            <span class="carrinho">Carinho:{{cartService.obterQuantidade()}}</span>
+            }
+            </nav>
     </div>
 
 </header>
