@@ -1,8 +1,11 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
-import { ItemProduto, Produto } from '../../services/produto';
+import { CurrencyPipe,UpperCasePipe } from '@angular/common'; 
+import { ItemProduto } from '../../services/produto';
+import { TruncatePipe } from '../../pipes/truncate-pipe';
+import { DiscountPipe } from '../../pipes/discount-pipe';
 
 @Component({
-  imports: [],
+  imports: [CurrencyPipe,UpperCasePipe, TruncatePipe,DiscountPipe],
   selector: 'app-card-produto',
   styleUrl: './card-produto.css',
   templateUrl: './card-produto.html',
